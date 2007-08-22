@@ -7,7 +7,7 @@ Version: %{version}
 Release: %{release}
 URL: http://www.libconf.net/
 Source: http://libconf.net/download/%{name}-%{version}.tar.bz2
-Patch0: SOURCES/perl-Libconf-0.39.9-fix-drakups.patch
+Patch0: perl-Libconf-0.39.9-fix-drakups.patch
 License: GPL
 Group: Development/Perl
 #BuildArch: noarch
