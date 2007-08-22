@@ -1,5 +1,5 @@
 %define version 0.42.00
-%define release %mkrel 7
+%define release %mkrel 8
 
 Summary: Configuration file abstraction layer
 Name: perl-Libconf
@@ -8,6 +8,7 @@ Release: %{release}
 URL: http://www.libconf.net/
 Source: http://libconf.net/download/%{name}-%{version}.tar.bz2
 Patch0: perl-Libconf-0.39.9-fix-drakups.patch
+Patch1: perl-Libconf-fix-doc-build.patch
 License: GPL
 Group: Development/Perl
 #BuildArch: noarch
@@ -50,6 +51,7 @@ Libconf devel files.
 %prep
 %setup -q
 %patch0 -p0
+%patch1 -p0
 
 %build
 %make all CFLAGS="$RPM_OPT_FLAGSS -Wall -O2 -fpic" BINDINGS="bash c"
@@ -57,7 +59,7 @@ Libconf devel files.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%makeinstall PREFIX="$RPM_BUILD_ROOT%{_prefix}" LIB_DIR="$RPM_BUILD_ROOT%{_libdir}"
+%makeinstall PREFIX="$RPM_BUILD_ROOT%{_prefix}" LIB_DIR="$RPM_BUILD_ROOT%{_libdir}" NAME=%name
 
 %clean
 rm -rf $RPM_BUILD_ROOT
