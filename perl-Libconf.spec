@@ -12,7 +12,6 @@ Patch1: perl-Libconf-fix-doc-build.patch
 License: GPL
 Group: Development/Perl
 #BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: perl-XML-LibXML perl-Text-DelimMatch
 BuildRequires: perl-devel
 # not automatically detected:
