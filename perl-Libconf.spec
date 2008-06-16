@@ -17,7 +17,7 @@ BuildRequires: perl-XML-LibXML perl-Text-DelimMatch
 BuildRequires: perl-devel
 # not automatically detected:
 
-#%define _requires_exceptions perl(Libconf::Glueconf::KeyValue)
+#define _requires_exceptions perl(Libconf::Glueconf::KeyValue)
 
 %description
 Libconf is a wrapper to the main configuration files of the system. It's mainly
