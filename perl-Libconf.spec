@@ -1,5 +1,5 @@
 %define version 0.42.00
-%define release %mkrel 8
+%define release %mkrel 9
 
 Summary: Configuration file abstraction layer
 Name: perl-Libconf
