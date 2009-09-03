@@ -1,7 +1,7 @@
 Summary:	Configuration file abstraction layer
 Name:		perl-Libconf
 Version:	0.42.10
-Release:	%{mkrel 1}
+Release:	%{mkrel 2}
 URL:		http://www.libconf.net/
 Source0:	http://libconf.net/download/%{name}-%{version}.tar.bz2
 Patch0:		perl-Libconf-0.39.9-fix-drakups.patch
