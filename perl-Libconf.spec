@@ -9,6 +9,7 @@ Patch1:		perl-Libconf-fix-doc-build.patch
 # Fix build for perl 5.10: suggested by http://patches.ubuntu.com/by-release/extracted/debian/o/openser/1.3.0-3/04_perl_for_perl5.10.dpatch
 # for a similar issue in openser, from Ubuntu - AdamW 2008/07
 Patch2:		perl-Libconf-0.42.10-perl510.patch
+Patch3:		perl-Libconf-0.42.10-buildfix.diff
 License:	GPLv2+
 Group:		Development/Perl
 BuildRoot:	%{_tmppath}/%{name}-buildroot
@@ -53,6 +54,7 @@ Libconf devel files.
 %patch0 -p0
 %patch1 -p0
 %patch2 -p1 -b .perl510
+%patch3 -p0
 
 %build
 %make all CFLAGS="%{optflags} -Wall -O2 -fpic" BINDINGS="bash c"
@@ -86,4 +88,3 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_libdir}/libconf2xml.so
 %{_includedir}/*
-
