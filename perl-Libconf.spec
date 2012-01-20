@@ -18,6 +18,8 @@ BuildRequires:	perl-Text-DelimMatch
 BuildRequires:	perl-devel
 # not automatically detected:
 #define _requires_exceptions perl(Libconf::Glueconf::KeyValue)
+# temporary dep due to the perl-5.14 bump
+BuildRequires:  perl-List-MoreUtils >= 0.320.0-4
 
 %description
 Libconf is a wrapper to the main configuration files of the system.
