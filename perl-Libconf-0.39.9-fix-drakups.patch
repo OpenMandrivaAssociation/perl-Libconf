@@ -1,0 +1,11 @@
+--- ./perl-Libconf/Glueconf/NUT/Ups_conf.pm.orig	2004-11-24 01:16:40.000000000 +0100
++++ ./perl-Libconf/Glueconf/NUT/Ups_conf.pm	2005-02-24 18:05:49.686633431 +0100
+@@ -82,7 +82,7 @@
+     debug();
+     my $atom = $obj->{libconf}->get_atom(0);
+     if (defined $atom->{type} && $atom->{type} ne '') {
+-        $atom->{type} eq 'SECTION' or die "atom n° 0 is not a section\n";
++        $atom->{type} eq 'SECTION' or warn "atom n° 0 is not a section\n";
+     }
+     $atom->{section_name};
+ }

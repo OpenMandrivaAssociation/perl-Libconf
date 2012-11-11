@@ -1,0 +1,9 @@
+--- perl-Libconf/Makefile	2005-11-14 15:59:50.000000000 +0100
++++ perl-Libconf/Makefile.oden	2011-05-21 09:36:19.000000000 +0200
+@@ -75,5 +75,4 @@
+ 	@$(MAKE) -s -C Glueconf check
+ #	@$(MAKE) -s -C System check
+ etags:
+-        if [ "x$(ETAGS)" = "x1" ]; then find . -type f | grep '.p.$$' | xargs etags; fi
+-
++	if [ "x$(ETAGS)" = "x1" ]; then find . -type f | grep '.p.$$' | xargs etags; fi

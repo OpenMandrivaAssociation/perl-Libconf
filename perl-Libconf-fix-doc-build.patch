@@ -1,0 +1,16 @@
+--- ./doc/Makefile.tv	2007-08-22 15:33:07.000000000 +0200
++++ ./doc/Makefile	2007-08-22 15:33:19.000000000 +0200
+@@ -2,9 +2,9 @@ CPA = cp -a
+ INSTALLDOCDIR = $(PREFIX)/share/doc
+ 
+ install:
+-	mkdir -p $(INSTALLDOCDIR)/$(TAR)/html && $(CPA) html/* $(INSTALLDOCDIR)/$(TAR)/html
+-	rm -rf $(INSTALLDOCDIR)/$(TAR)/html/Libconf/Libconf
+-	ln -sf . $(INSTALLDOCDIR)/$(TAR)/html/Libconf/Libconf
++	mkdir -p $(INSTALLDOCDIR)/$(NAME)/html && $(CPA) html/* $(INSTALLDOCDIR)/$(NAME)/html
++	rm -rf $(INSTALLDOCDIR)/$(NAME)/html/Libconf/Libconf
++	ln -sf . $(INSTALLDOCDIR)/$(NAME)/html/Libconf/Libconf
+ 
+ uninstall:
+-	rm -rf $(INSTALLDOCDIR)/$(TAR)
++	rm -rf $(INSTALLDOCDIR)/$(NAME)
