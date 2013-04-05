@@ -19,6 +19,8 @@ BuildRequires:	perl-devel
 # not automatically detected:
 #define _requires_exceptions perl(Libconf::Glueconf::KeyValue)
 
+%define debug_package %{nil}
+
 %description
 Libconf is a wrapper to the main configuration files of the system.
 It's mainly a generic parser plus many templates.
@@ -176,7 +178,7 @@ Libconf devel files.
 * Tue May 31 2005 Thierry Vignaud <tvignaud@mandrakesoft.com> 0.39.16-2mdk
 - add missing requires
 
-* Wed May 25 2005 Antoine Giniès <aginies@mandriva.com> 0.39.16-1mdk
+* Wed May 25 2005 Antoine GiniÃ¨s <aginies@mandriva.com> 0.39.16-1mdk
 - 0.39.16 release
 
 * Thu Feb 24 2005 Thierry Vignaud <tvignaud@mandrakesoft.com> 0.39.9-2mdk
