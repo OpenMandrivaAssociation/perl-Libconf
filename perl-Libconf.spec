@@ -1,7 +1,7 @@
 Summary:	Configuration file abstraction layer
 Name:		perl-Libconf
 Version:	0.42.10
-Release:	7
+Release:	8
 License:	GPLv2+
 Group:		Development/Perl
 URL:		http://www.libconf.net/
