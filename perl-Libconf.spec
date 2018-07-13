@@ -15,6 +15,7 @@ Patch1:		perl-Libconf-fix-doc-build.patch
 # for a similar issue in openser, from Ubuntu - AdamW 2008/07
 Patch2:		perl-Libconf-0.42.10-perl510.patch
 Patch3:		perl-Libconf-0.42.10-buildfix.diff
+BuildRequires:	perl(ExtUtils::Embed)
 BuildRequires:	perl-XML-LibXML
 BuildRequires:	perl-Text-DelimMatch
 BuildRequires:	perl-devel
