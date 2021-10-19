@@ -53,7 +53,7 @@ Requires:	%{name}
 Libconf devel files.
 
 %prep
-%setup -q
+%autosetup -p1
 %patch0 -p0
 %patch1 -p0
 %patch2 -p1 -b .perl510
@@ -83,4 +83,3 @@ Libconf devel files.
 %files devel
 %{_libdir}/libconf2xml.so
 %{_includedir}/*
-
