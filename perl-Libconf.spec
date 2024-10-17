@@ -6,7 +6,7 @@ Version:	0.42.10
 Release:	22
 License:	GPLv2+
 Group:		Development/Perl
-Url:		http://www.libconf.net/
+Url:		https://www.libconf.net/
 Source0:	http://libconf.net/download/%{name}-%{version}.tar.bz2
 Source1:	%{name}.rpmlintrc
 Patch0:		perl-Libconf-0.39.9-fix-drakups.patch
